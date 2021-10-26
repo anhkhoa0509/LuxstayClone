@@ -1,0 +1,172 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+/* Responsive  */
+.grid {
+    width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 32px;
+    position: relative;
+}
+
+.grid__body {
+    width: 100%;
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid_column-2 {
+    padding: 0px 5px;
+    width: 16.667%;
+}
+
+.grid_column-2-6 {
+    padding: 0px 5px;
+    width: 50%;
+}
+
+.grid_column-2-4 {
+    padding: 0px 5px;
+    width: 25%;
+}
+
+.grid_column-2-5 {
+    padding: 0px 12px;
+    width: 20%;
+}
+
+.grid_column-2-3 {
+    padding: 0px 12px;
+    width: 33.333%;
+}
+
+.grid_column-2-3 {
+    padding: 0px 12px;
+    width: 33.333%;
+}
+
+.grid_column-10 {
+    padding: 0px 5px;
+    width: 83.333%;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    animation: notiGrow linear .1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background: black;
+}
+
+.modal__body {
+    z-index: 1;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+}
+
+
+/* Button */
+.btn {
+    min-width: 1px;
+    height: 36px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+}
+
+.btn.btn--primary {
+    background: #f53d2d;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Chuyển trang */
+.change-page {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-page__all {
+    align-items: center;
+    display: flex;
+}
+
+.change-page__link {
+    width: 40px;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(180, 177, 177);
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0px 16px;
+}
+
+@media (min-width: 740px) and (max-width:1023px) {
+    .grid__body {
+        width: 844px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1239px) {
+    .grid__body {
+        width: 984px;
+    }
+
+    .grid__row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+@media (min-width:740px) {
+    .grid__row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+
